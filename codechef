@@ -1,0 +1,7 @@
+for i in range(int(input())):
+    x=int(input("enter total courses:"));
+    y=int(input("enter no.of units:"));
+    z=int(input("enter no.of chapters:"));
+    print(x*y*z)
+        
+        
