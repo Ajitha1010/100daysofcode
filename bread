@@ -1,0 +1,9 @@
+t=int(input());
+for i in range(t):
+    n=int(input());
+    k=int(input());
+    m=int(input());
+    if((k*m)>=n):
+        print("yes");
+    else:
+        print("no");
