@@ -1,0 +1,6 @@
+t=int(input());
+for i in range(t):
+    c=int(input())
+    y=int(input())
+    z=int(input())
+    print((c-y)*z)
