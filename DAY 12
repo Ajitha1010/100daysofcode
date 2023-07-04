@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(t):
+    a=int(input())
+    b=int(input())
+    x=a*10
+    y=b*5
+    if(x==y):
+        print('ANY')
+    elif(x>y):
+        print('first')
+    else:
+        print('second')
