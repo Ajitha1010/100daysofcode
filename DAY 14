@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    a=int(input())
+    b=int(input())
+    c=a*1+b*2
+    if(c>=x):
+        print('qualify')
+    else:
+        print('not qualify')
