@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    if (x%10==0):
+        print(x//10)
+    elif(x%10==0 or x%5==0):
+        print((x//5)-(x//10))
+    else:
+        print('-1')
