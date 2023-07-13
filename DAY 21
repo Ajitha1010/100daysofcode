@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    if (x<1500):
+        a=(10/100)*x 
+        b=(90/100)*x 
+        print(x+a+b)
+    else:
+        c=(98/100)*x 
+        print(x+c+500)
