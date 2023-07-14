@@ -1,0 +1,14 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    for i in range(x):
+        l1=[]
+        y=int(input())
+        l1.append(y)
+    for i in range(len(l1)-1):
+        a=l1[0]
+        if (l1[i]>a):
+            a=l1[i]
+    print(i)
+   
+    
