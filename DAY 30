@@ -1,0 +1,12 @@
+n=5
+a=0
+for i in range(n):
+    for j in range(i+1):
+        a=a+1 
+        print(a,end=" ")
+    print("\n")
+n=5
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65+j),end=" ")
+    print('\n')
