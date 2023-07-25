@@ -1,0 +1,22 @@
+n=int(input())
+num=0
+n1=n
+while n1>0:
+    rem=n1%10
+    num=num+(rem*rem*rem)
+    n1=n1//10
+if n==num:
+    print('yes')
+else:
+    print('no')
+x=int(input())
+temp=x
+rev=0
+while(x>0):
+   dig=x%10
+   rev=rev*10+dig
+   x=x//10
+if(temp==rev):
+   print('yes')
+else:
+   print('no')
