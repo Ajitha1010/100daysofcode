@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int i, j;
+    int n;
+    scanf("%d", &n);
+		
+    int dim=2*n-1;
+    int mat[dim][dim];
+    
+    for(i=0;i<dim;i++)
+        for(j=0;j<dim;j++)
+            mat[i][j]=0;
+    
+ 
+    for(i=dim/2; i>=0;i--){
+        for(j=dim/2; j>=0;j--){
+            for(int k=n;k>=0; k--){
+                if(i==k || j==k)
+                    mat[i][j]=n-k;
+            }
+        }
+    }
+    
+
+    for(i=0;i<n;i++)
+        for(j=0;j<dim/2;j++){
+            mat[i][dim-j-1]= mat[i][j];
+        }
+        
+        
+
+    for(i=0;i<dim;i++)
+        for(j=0;j<dim;j++){
+mat[dim-i-1][j]= mat[i][j];
+        }
+
+    for(i=0;i<dim;i++){
+        for(j=0;j<dim;j++){
+            printf("%d ", mat[i][j]);
+        }
+        printf("\n");
+    }
+
+
+    return 0;
+}
