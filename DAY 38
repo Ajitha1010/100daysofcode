@@ -1,0 +1,17 @@
+n=int(input())
+s=''
+while(n!=0):
+    r=str(n%2)
+    n=n//2
+    s=s+r
+print(s)
+n=int(input())
+d=0
+b=0
+while(n!=0):
+    r=n%10
+    n=n//10
+    a=r*(2**b)
+    b=b+1 
+    d=d+a
+print(d)
