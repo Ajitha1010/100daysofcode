@@ -1,0 +1,11 @@
+l=[4,1,3,9,7]
+for j in range(0,len(l)):
+    s=l[j]
+    s1=j
+    for i in range(j+1,len(l)):
+        if l[i]<s:
+            s=l[i]
+            s1=i
+    l[j],l[s1]=l[s1],l[j]
+print(l)
+ 
