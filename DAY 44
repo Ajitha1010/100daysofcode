@@ -1,0 +1,12 @@
+n=5
+l=[]
+for i in range (n):
+  l.append(int(input())
+t=l[0]
+for i in range(n):
+   if l[i]>t:
+     t=l[i]
+print(t)
+   
+
+  
