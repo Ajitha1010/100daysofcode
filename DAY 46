@@ -1,0 +1,14 @@
+n=int(input())
+l=[]
+for i in range(n):
+    l.append(int(input()))
+print(l)
+t=l[0]
+s=l[0]
+for i in l:
+    if i>t:
+        t=i
+for i in l:
+    if i>s and i!=t:  
+      s=i
+print(s)
