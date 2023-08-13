@@ -1,0 +1,8 @@
+a=[1,3,4,2]
+d=3
+t=[]
+for i in range(len(a)-d):
+    t.append(a[i+d])
+for j in range(d):
+    t.append(a[j])
+print(t)
