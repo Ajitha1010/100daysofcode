@@ -1,0 +1,8 @@
+a=[0,1,0,3,12]
+t=[]
+for i in range(len(a)):
+    if a[i]!=0:
+        t.append(a[i])
+for j in range(len(a)-len(t)):
+    t.append(0)
+print(t)
