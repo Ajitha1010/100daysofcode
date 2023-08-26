@@ -1,0 +1,14 @@
+a= [3,1,-2,-5,2,-4]
+n=len(a)
+p=[]
+ne=[]
+for i in range(n):
+    if a[i]>0:
+        p.append(a[i])
+    else:
+        ne.append(a[i])
+for i in range(len(p)):
+    a[2*i]=p[i]
+for i in range(len(ne)):
+    a[2*i+1]=ne[i]
+print(a)
