@@ -1,0 +1,14 @@
+n=6
+a=[]
+ans=[]
+for i in range(n):
+    a.append(int(input()))
+for i in range(n):
+    l=True
+    for j in range(i+1,n):
+        if a[j]>a[i]:
+            l=False
+            break
+    if l:
+        ans.append(a[i])
+print(ans)
