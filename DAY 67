@@ -1,0 +1,26 @@
+def linear(a, num):
+    n = len(a)  
+    for i in range(n):
+        if a[i] == num:
+            return True
+    return False
+
+
+def long(a):
+    n = len(a)  
+    l = 1
+    for i in range(n):
+        x = a[i]
+        cnt = 1
+        while linear(a, x + 1):
+            x += 1
+            cnt += 1
+
+        l = max(l, cnt)
+    return l
+
+
+a = [100, 200, 1, 2, 3, 4]
+ans=long(a)
+print(ans)
+
