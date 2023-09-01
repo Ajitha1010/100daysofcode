@@ -1,0 +1,9 @@
+a=[1,1,1]
+k=2
+c=0
+for i in range(len(a)):
+    for j in range(i,len(a)):
+        s=sum(a[i:j+1])
+        if s==k:
+            c=c+1 
+print(c)
