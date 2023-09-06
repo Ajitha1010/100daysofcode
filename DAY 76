@@ -1,0 +1,10 @@
+n = 8
+a= [15,-2,2,-8,1,7,10,23]
+maxx=0
+for i in range(n):
+    sum=0 
+    for j in range(i,n):
+        sum=sum+a[j]
+        if sum==0:
+            maxx = max(maxx, j-i+1)
+print(maxx)
