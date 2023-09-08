@@ -1,0 +1,16 @@
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+      n=len(intervals)
+      intervals.sort()
+      ans=[]
+      for i in range(n):
+        s,e=intervals[i][0],intervals[i][1]
+        if ans and e <= ans[-1][1]:
+            continue
+        for j in range(i + 1, n):
+            if intervals[j][0] <= e:
+                e = max(e, intervals[j][1])
+            else:
+                break
+        ans.append([s, e])
+      return ans
