@@ -1,0 +1,8 @@
+a=[1, 1, 2, 2, 2, 2, 3]
+n=len(a)
+x=4
+c=0
+for i in range(n):
+    if a[i]==x:
+        c=c+1 
+print(c)
