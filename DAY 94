@@ -1,0 +1,22 @@
+def reverseWords(s):
+    words = []
+    i = 0
+    while i < len(s):
+        while i < len(s) and s[i] == ' ':
+            i += 1
+        if i < len(s):
+            j = i
+            while j < len(s) and s[j] != ' ':
+                j += 1
+            words.append(s[i:j])
+            i = j
+    reversed_words = []
+    for word in reversed(words):
+        reversed_words.append(word)
+
+    result = ' '.join(reversed_words)
+
+    return result
+s = "the sky is blue"
+output = reverseWords(s)
+print(output)
