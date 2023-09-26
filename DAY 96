@@ -1,0 +1,24 @@
+def isomorphic(s, t):
+    if len(s) != len(t):
+        return False
+    
+    s= {}
+    t= {}
+    
+    for i in range(len(s)):
+        if s[i] in s:
+            if s[s[i]] != t[i]:
+                return False
+        else:
+            s[s[i]] = t[i]
+        
+        if t[i] in t:
+            if t[t[i]] != s[i]:
+                return False
+        else:
+            t[t[i]] = s[i]
+    
+    return True
+s = "egg"
+t = "add"
+print(isomorphic(s, t)) 
