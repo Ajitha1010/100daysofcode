@@ -1,0 +1,13 @@
+s = "anagram"
+t = "nagaram"
+c='true'
+if len(s)!=len(t):
+    print('false')
+else:
+    for i in range(len(s)):
+        if t[i] in s:
+            continue
+        else:
+            break
+            c='false'
+    print(c)
