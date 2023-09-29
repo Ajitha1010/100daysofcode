@@ -1,0 +1,13 @@
+s = "tree"
+count = {}
+for char in s:
+    if char in count:
+            count[char] += 1
+    else:
+        count[char] = 1
+sort = sorted(count.keys(), key=lambda char:count[char], reverse=True)
+sorted_str=""
+for char in sort:
+    sorted_str += char *count[char]
+print(sorted_str)
+s = "tree"
